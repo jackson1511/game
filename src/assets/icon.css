@@ -1,0 +1,32 @@
+.icon {
+    background-image: url('./sprite.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    /* background-size: 922px 814px; Adjust to match the sprite's dimensions */
+    /* background-repeat: no-repeat; */
+}
+
+.icon-home {
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+}
+
+.icon-settings {
+    width: 32px;
+    height: 32px;
+    background-position: -32px 0;
+}
+
+.icon-profile {
+    width: 32px;
+    height: 32px;
+    background-position: -64px 0;
+}
+.icon-moneypig{
+ background-position: -776px -577px; 
+width: 89px;
+height: 74px;
+}
+
+/* Add more icons as needed */

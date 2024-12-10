@@ -1,0 +1,2156 @@
+:root {
+    --theme-max-width: 450px
+}
+
+html {
+    height: 100%;
+    width: 100%
+}
+
+html[data-device=desktop] {
+    font-size: 5.20833vw;
+    font-size: calc(100vw/(1920/var(--theme-rem-unit, 100)))
+}
+
+@media screen and (min-width:1920px) {
+    html[data-device=desktop] {
+        font-size: 100px;
+        font-size: calc(1920px/(1920/var(--theme-rem-unit, 100)))
+    }
+}
+
+@media only screen and (min-width:1400px)and (max-width:1499px) {
+    html[data-device=desktop] {
+        font-size: 5.5208333333vw
+    }
+}
+
+@media only screen and (min-width:1300px)and (max-width:1399px) {
+    html[data-device=desktop] {
+        font-size: 5.6770833333vw
+    }
+}
+
+@media only screen and (min-width:1200px)and (max-width:1299px) {
+    html[data-device=desktop] {
+        font-size: 6.1458333333vw
+    }
+}
+
+@media only screen and (min-width:1100px)and (max-width:1199px) {
+    html[data-device=desktop] {
+        font-size: 6.5625vw
+    }
+}
+
+@media only screen and (min-width:1000px)and (max-width:1099px) {
+    html[data-device=desktop] {
+        font-size: 6.7708333333vw
+    }
+}
+
+@media only screen and (min-width:900px)and (max-width:999px) {
+    html[data-device=desktop] {
+        font-size: 7.2916666667vw
+    }
+}
+
+@media only screen and (min-width:750px)and (max-width:899px) {
+    html[data-device=desktop] {
+        font-size: 8.3333333333vw
+    }
+}
+
+html[data-device=mobile] {
+    font-size: 13.33333vw;
+    font-size: calc(100vw/(750/var(--theme-rem-unit, 100)))
+}
+
+html[data-device-nodesktop="1"] {
+    background: var(--theme-color-line);
+    font-size: 60px !important;
+    font-size: calc(var(--theme-max-width)/(750/var(--theme-rem-unit, 100))) !important;
+    margin: 0 auto;
+    max-width: 450px;
+    max-width: var(--theme-max-width)
+}
+
+html[data-device-nodesktop="1"] #nprogress,
+html[data-device-nodesktop="1"] .van-overlay,
+html[data-device-nodesktop="1"] .van-tabbar,
+html[data-device-nodesktop="1"] .verification-btn__group,
+html[data-device-nodesktop="1"] .wg-fixed-no-desktop {
+    left: auto !important;
+    margin: 0 auto;
+    max-width: 450px;
+    max-width: var(--theme-max-width)
+}
+
+html[data-device-nodesktop="1"] .van-popup {
+    left: auto
+}
+
+html[data-device-nodesktop="1"] .ant-modal-mask,
+html[data-device-nodesktop="1"] .van-popup,
+html[data-device-nodesktop="1"] .van-sticky--fixed {
+    margin: 0 auto;
+    max-width: 450px;
+    max-width: var(--theme-max-width)
+}
+
+html[data-device-nodesktop="1"] #nprogress {
+    margin-left: .03rem;
+    overflow: hidden
+}
+
+html[data-device-nodesktop="1"] body {
+    width: 100% !important
+}
+
+html[data-device-nodesktop="0"] {
+    --theme-max-width: 100%
+}
+
+@-webkit-keyframes common_bganimation {
+    0% {
+        background-position-x: 125%
+    }
+
+    to {
+        background-position-x: -32%
+    }
+}
+
+:root {
+    --theme-main-width: 12rem
+}
+
+.skeleton-screen-main {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000
+}
+
+.skeleton-screen-main .base-loading-animation,
+.skeleton-screen-main .base-loading-animation1 {
+    -webkit-animation: bganimation 1.2s infinite;
+    animation: bganimation 1.2s infinite;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(rgba(var(--theme-color-line-hex), .2)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), to(var(--theme-bg-color)));
+    background-image: linear-gradient(90deg, var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), rgba(var(--theme-color-line-hex), .2), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color));
+    background-size: 400%
+}
+
+.skeleton-screen-main .b-redius-min {
+    border-radius: .05rem
+}
+
+.skeleton-screen-main .b-redius {
+    border-radius: .12rem
+}
+
+.skeleton-screen-main .b-redius-max {
+    border-radius: .2rem
+}
+
+.skeleton-screen-main .b-shadow {
+    -webkit-box-shadow: 0 .03rem .09rem 0 rgba(0, 0, 0, .024);
+    box-shadow: 0 .03rem .09rem 0 rgba(0, 0, 0, .024)
+}
+
+@-webkit-keyframes bganimation {
+    0% {
+        background-position: 100% 50%
+    }
+
+    to {
+        background-position: 0 50%
+    }
+}
+
+@keyframes bganimation {
+    0% {
+        background-position: 100% 50%
+    }
+
+    to {
+        background-position: 0 50%
+    }
+}
+
+.skeleton-screen-main .base-loading-container {
+    background: var(--theme-bg-color);
+    height: 100vh;
+    width: 100%
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] {
+    background: var(--theme-main-bg-color);
+    height: 100vh;
+    height: calc(var(--vh, 1vh)*100)
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] header {
+    -ms-flex-align: center;
+    align-items: center;
+    background: var(--theme-main-bg-color);
+    border-bottom: .02rem solid var(--theme-color-line);
+    display: -ms-flexbox;
+    display: flex;
+    height: .8rem;
+    width: 100%
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] header>.mid {
+    height: .54rem;
+    width: 1.8rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] header>.left,
+.skeleton-screen-main .base-loading-container[data-device=mobile] header>.right {
+    -ms-flex-align: center;
+    -ms-flex-pack: left;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+    flex: 1;
+    justify-content: left
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] header>.right {
+    -ms-flex-pack: right;
+    justify-content: right
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] header>div>.item {
+    padding: 0 .2rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] header>div>.item>.circle {
+    border-radius: 50%;
+    height: .38rem;
+    margin: 0 auto;
+    width: .38rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] header>div>.item>.p1 {
+    height: .12rem;
+    margin: .06rem auto 0;
+    width: .4rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .bottom-menu {
+    -ms-flex-align: center;
+    -ms-flex-pack: space-evenly;
+    align-items: center;
+    background: var(--theme-main-bg-color);
+    bottom: 0;
+    -webkit-box-shadow: 0 -.09rem .06rem 0 rgba(0, 0, 0, .031);
+    box-shadow: 0 -.09rem .06rem 0 rgba(0, 0, 0, .031);
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    justify-content: space-evenly;
+    left: 0;
+    position: fixed;
+    width: 100%
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .bottom-menu>.item {
+    padding: 0 .06rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .bottom-menu>.item>.circle {
+    border-radius: 50%;
+    height: .38rem;
+    margin: 0 auto;
+    width: .38rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .bottom-menu>.item>.p1 {
+    height: .12rem;
+    margin: .12rem auto 0;
+    width: .6rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content {
+    padding: 0 .2rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.ban {
+    margin-top: .2rem;
+    width: 100%
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner1 {
+    height: 1.5rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner2 {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner2>.circle {
+    border-radius: 50%;
+    height: .38rem;
+    width: .38rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner2>.p1 {
+    -ms-flex: 1;
+    flex: 1;
+    height: .12rem;
+    margin-left: .12rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner3 {
+    display: -ms-flexbox;
+    display: flex
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner3>.left>.p1,
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner3>.left>.p2 {
+    height: .12rem;
+    margin-top: .18rem;
+    width: 2.2rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner3>.left>.p2 {
+    margin-top: .18rem;
+    width: 1.8rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner3>.right {
+    -ms-flex-pack: justify;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+    flex: 1;
+    justify-content: space-between;
+    padding-left: .8rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner3>.right>div {
+    height: .68rem;
+    width: .68rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner4 {
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: .2rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner4>.left {
+    overflow: hidden;
+    padding-right: .2rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner4>.left>.item {
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    height: .65rem;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1.4rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner4>.left>.item+.item {
+    margin-top: .2rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner4>.left>.item>.circle {
+    background: var(--theme-main-bg-color);
+    border-radius: 50%;
+    height: .38rem;
+    width: .38rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner4>.left>.item>.p1 {
+    background: var(--theme-main-bg-color);
+    height: .12rem;
+    margin-left: .06rem;
+    width: .6rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner4>.right {
+    -ms-flex: 1;
+    flex: 1
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner4>.right>.top {
+    -ms-flex-pack: justify;
+    border-bottom: .01rem solid var(--theme-color-line);
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    padding: .28rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner4>.right>.top>div {
+    height: .14rem;
+    width: .9rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner4 .game-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: .3rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner4 .game-list>.game-item {
+    padding-bottom: .3rem;
+    width: 33.3333333333%
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner4 .game-list>.game-item>.img {
+    height: 1.3rem;
+    margin: 0 auto;
+    width: 1.3rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner4 .game-list>.game-item>.p1,
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner4 .game-list>.game-item>.p2 {
+    height: .1rem;
+    margin: .12rem auto 0;
+    width: .8rem
+}
+
+.skeleton-screen-main .base-loading-container[data-device=mobile] .main-content>.centre-content>.banner4 .game-list>.game-item>.p2 {
+    margin-top: .06rem;
+    width: .6rem
+}
+
+.skeleton-screen-main .base-loading-container header {
+    background: var(--theme-main-bg-color);
+    border-bottom: .02rem solid var(--theme-color-line);
+    height: .8rem;
+    position: relative;
+    width: 100%
+}
+
+.skeleton-screen-main .base-loading-container header>aside {
+    height: .3rem;
+    left: .12rem;
+    position: absolute;
+    top: calc(50% - .15rem);
+    width: 2rem
+}
+
+.skeleton-screen-main .base-loading-container header>section {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    width: 12rem;
+    width: var(--theme-main-width)
+}
+
+.skeleton-screen-main .base-loading-container header>section,
+.skeleton-screen-main .base-loading-container header>section>div {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%
+}
+
+.skeleton-screen-main .base-loading-container header>section .circle1,
+.skeleton-screen-main .base-loading-container header>section .circle2 {
+    border: .02rem solid var(--theme-color-line);
+    border-radius: .18rem;
+    height: .3rem;
+    width: 2rem
+}
+
+.skeleton-screen-main .base-loading-container header>section .circle1 {
+    width: 1.5rem
+}
+
+.skeleton-screen-main .base-loading-container header>section>div>div+div {
+    margin-left: .12rem
+}
+
+.skeleton-screen-main .base-loading-container header>section .block1 {
+    height: .34rem;
+    width: .8rem
+}
+
+.skeleton-screen-main .base-loading-container header>section .block2 {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    width: 2rem
+}
+
+.skeleton-screen-main .base-loading-container header>section .block2>.left {
+    height: .4rem;
+    width: .4rem
+}
+
+.skeleton-screen-main .base-loading-container header>section .block2>.right {
+    -ms-flex: 1;
+    flex: 1;
+    margin-left: .12rem
+}
+
+.skeleton-screen-main .base-loading-container header>section .block2>.right .rb1 {
+    height: .1rem;
+    width: .4rem
+}
+
+.skeleton-screen-main .base-loading-container header>section .block2>.right .rb2 {
+    height: .1rem;
+    margin-top: .04rem;
+    width: 100%
+}
+
+.skeleton-screen-main .base-loading-container main {
+    height: calc(100vh - .66rem);
+    position: relative;
+    width: 100%
+}
+
+.skeleton-screen-main .base-loading-container main>aside {
+    background: var(--theme-main-bg-color);
+    height: 100%;
+    left: 0;
+    padding: 0 .1rem;
+    position: absolute;
+    top: 0;
+    width: .68rem
+}
+
+.skeleton-screen-main .base-loading-container main>aside .circle-box+.circle-box {
+    border-top: .02rem solid #f1f1f1;
+    margin-top: .2rem
+}
+
+.skeleton-screen-main .base-loading-container main>aside .circle-box>.circle {
+    border-radius: 50%;
+    height: .28rem;
+    margin: .2rem auto 0;
+    width: .28rem
+}
+
+.skeleton-screen-main .base-loading-container main>.right-aside {
+    bottom: 3rem;
+    position: absolute;
+    right: .12rem
+}
+
+.skeleton-screen-main .base-loading-container main>.right-aside>.item {
+    background: var(--theme-main-bg-color);
+    padding: .08rem;
+    width: .78rem
+}
+
+.skeleton-screen-main .base-loading-container main>.right-aside>.item+.item {
+    margin-top: .08rem
+}
+
+.skeleton-screen-main .base-loading-container main>.right-aside>.item>.circle {
+    border-radius: 50%;
+    height: .28rem;
+    margin: 0 auto;
+    width: .28rem
+}
+
+.skeleton-screen-main .base-loading-container main>.right-aside>.item>.p1,
+.skeleton-screen-main .base-loading-container main>.right-aside>.item>.p2 {
+    height: .08rem;
+    margin: .06rem auto 0;
+    width: .4rem
+}
+
+.skeleton-screen-main .base-loading-container main>.right-aside>.item>.p2 {
+    margin-top: .03rem;
+    width: .3rem
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content {
+    height: calc(100% - .12rem);
+    margin: 0 auto;
+    padding-top: .12rem;
+    width: 12rem;
+    width: var(--theme-main-width)
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner {
+    background: var(--theme-main-bg-color);
+    padding: .14rem;
+    position: relative
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner+.banner {
+    margin-top: .12rem
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner1>.img1 {
+    height: 2rem;
+    margin-bottom: .2rem;
+    margin-top: .2rem;
+    width: 100%
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner1>.img2 {
+    height: 2.2rem;
+    left: 10%;
+    margin-bottom: .2rem;
+    margin-top: .2rem;
+    position: absolute;
+    top: 0;
+    width: 80%
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner1>.p {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner1>.p>.circle {
+    border-radius: 50%;
+    height: .28rem;
+    width: .28rem
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner1>.p>.p1 {
+    -ms-flex: 1;
+    flex: 1;
+    height: .08rem;
+    margin-left: .12rem;
+    width: 100%
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner2>.top {
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner2>.top>.left {
+    border-bottom: .01rem solid var(--theme-color-line);
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: .12rem
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner2>.top>.left>.item {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner2>.top>.left>.item+.item {
+    margin-left: .3rem
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner2>.top>.left>.item>.circle {
+    border-radius: 50%;
+    height: .28rem;
+    width: .28rem
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner2>.top>.left>.item>.p1 {
+    height: .08rem;
+    margin-left: .06rem;
+    width: .8rem
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner2>.top>.right {
+    border: .02rem solid var(--theme-color-line);
+    border-radius: .18rem;
+    height: .3rem;
+    width: 2rem
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner2>.game-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: .2rem
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner2>.game-list>.game-item {
+    padding-bottom: .2rem;
+    width: 12.5%
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner2>.game-list>.game-item>.img {
+    height: 1rem;
+    margin: 0 auto;
+    width: 1rem
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner2>.game-list>.game-item>.p1,
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner2>.game-list>.game-item>.p2 {
+    height: .1rem;
+    margin: .12rem auto 0;
+    width: .8rem
+}
+
+.skeleton-screen-main .base-loading-container main>.centre-content>.banner2>.game-list>.game-item>.p2 {
+    margin-top: .06rem;
+    width: .6rem
+}
+
+@-webkit-keyframes euAn_bganimation {
+    0% {
+        background-position-x: 125%
+    }
+
+    to {
+        background-position-x: -32%
+    }
+}
+
+@keyframes euAn_bganimation {
+    0% {
+        background-position-x: 125%
+    }
+
+    to {
+        background-position-x: -32%
+    }
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .base-loading-animation {
+    -webkit-animation: euAn_bganimation .9s linear infinite;
+    animation: euAn_bganimation .9s linear infinite;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(rgba(var(--theme-color-line-hex), .2)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), to(var(--theme-bg-color)));
+    background-image: linear-gradient(90deg, var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), rgba(var(--theme-color-line-hex), .2), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color));
+    background-size: 200% 100%
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .base-loading-animation1 {
+    -webkit-animation: euAn_bganimation .9s linear infinite;
+    animation: euAn_bganimation .9s linear infinite;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(rgba(var(--theme-color-line-hex), .2)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), to(var(--theme-bg-color)));
+    background-image: linear-gradient(90deg, var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), rgba(var(--theme-color-line-hex), .2), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color));
+    background-size: 200% 100%
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] header {
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
+    align-items: center;
+    background: var(--theme-main-bg-color);
+    border-bottom: .02rem solid var(--theme-color-line);
+    display: -ms-flexbox;
+    display: flex;
+    height: .9rem;
+    justify-content: space-between;
+    padding: 0 .2rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .circle {
+    border-radius: 50%
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] header>.circle {
+    height: .42rem;
+    width: .42rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] header>.searchBox {
+    border: .01rem solid var(--theme-color-line);
+    border-radius: .21rem;
+    height: .42rem;
+    margin: 0 .12rem;
+    width: 2.5rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] header>.btn {
+    height: .42rem;
+    width: .9rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content {
+    background: var(--theme-main-bg-color);
+    height: calc(100vh - .9rem);
+    height: calc(var(--vh, 1vh)*100 - .9rem);
+    overflow: hidden;
+    padding: 0 .2rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content>.banner {
+    margin-top: .2rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content>.banner1 {
+    height: 2rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content>.banner2 {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content>.banner2>.circle {
+    height: .45rem;
+    width: .45rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content>.banner2>.p1 {
+    border-radius: .1rem;
+    -ms-flex: 1;
+    flex: 1;
+    height: .2rem;
+    margin-left: .12rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content>.banner2>.p2 {
+    border-radius: .1rem;
+    height: .2rem;
+    margin-left: .12rem;
+    width: 1.2rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content>.banner3 {
+    display: -ms-flexbox;
+    display: flex;
+    padding: .05rem 0;
+    position: relative
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content>.banner3 .left {
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content>.banner3 .btn+.btn {
+    margin-left: .16rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content>.banner3 .btn {
+    border-radius: .14rem;
+    height: .9rem;
+    width: 1.3rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content>.banner3 .right {
+    -ms-flex-align: center;
+    -ms-flex-pack: end;
+    align-items: center;
+    background: var(--theme-main-bg-color);
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25%
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content>.banner3 .right .search {
+    border: .01rem solid var(--theme-color-line);
+    border-radius: .29rem;
+    height: .58rem;
+    width: 1.6rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content>.banner4 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-top: .16rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content>.banner4>.card {
+    height: 2.93rem;
+    margin: 0 0 .24rem .2rem;
+    width: 2.22rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=mobile] .main-content>.centre-content>.banner4>.card:nth-of-type(3n+1) {
+    margin-left: 0
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] .base-loading-animation {
+    -webkit-animation: euAn_bganimation .9s linear infinite;
+    animation: euAn_bganimation .9s linear infinite;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(rgba(var(--theme-color-line-hex), .2)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), to(var(--theme-bg-color)));
+    background-image: linear-gradient(90deg, var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), rgba(var(--theme-color-line-hex), .2), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color));
+    background-size: 200% 100%
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] .base-loading-animation1 {
+    -webkit-animation: euAn_bganimation .9s linear infinite;
+    animation: euAn_bganimation .9s linear infinite;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(rgba(var(--theme-color-line-hex), .2)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), to(var(--theme-bg-color)));
+    background-image: linear-gradient(90deg, var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), rgba(var(--theme-color-line-hex), .2), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color));
+    background-size: 200% 100%
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] header {
+    background: var(--theme-main-bg-color);
+    height: .64rem;
+    position: relative;
+    width: 100%
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] header>aside {
+    height: .3rem;
+    left: .12rem;
+    position: absolute;
+    top: calc(50% - .15rem);
+    width: 2rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] header>section {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    width: 12rem;
+    width: var(--theme-main-width)
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] header>section,
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] header>section>div {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] header>section .circle1 {
+    border: .01rem solid hsla(0, 0%, 80%, .125);
+    border-radius: .18rem;
+    height: .3rem;
+    width: 2rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] header>section>div>div+div {
+    margin-left: .12rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] header>section .block1 {
+    height: .34rem;
+    width: .8rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] header>section .block2 {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    width: 2rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] header>section .block2>.left {
+    height: .4rem;
+    width: .4rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] header>section .block2>.right {
+    -ms-flex: 1;
+    flex: 1;
+    margin-left: .12rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] header>section .block2>.right .rb1 {
+    height: .1rem;
+    width: .4rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] header>section .block2>.right .rb2 {
+    height: .1rem;
+    margin-top: .04rem;
+    width: 100%
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main {
+    height: calc(100vh - .64rem);
+    position: relative;
+    width: 100%
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] .main-content {
+    background: var(--theme-bg-color);
+    display: -ms-flexbox;
+    display: flex
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>aside {
+    background: var(--theme-main-bg-color);
+    height: 100%;
+    padding: 0 .02rem;
+    width: 2.2rem;
+    z-index: 10
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>aside .circle-box {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>aside .circle-box>.circle {
+    height: .6rem;
+    margin-left: .1rem;
+    margin-top: .1rem;
+    width: .95rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>aside .circle-box>.circle.long,
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>aside .circle-box>.p {
+    width: 2rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>aside .circle-box>.p {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: .2rem;
+    margin-top: .2rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>aside .circle-box>.p>.circle {
+    border-radius: 50%;
+    height: .28rem;
+    width: .28rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>aside .circle-box>.p>.p1 {
+    height: .08rem;
+    margin-left: .06rem;
+    width: 1rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>.right-aside {
+    bottom: .8rem;
+    position: absolute;
+    right: .12rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>.right-aside>.item {
+    background: var(--theme-main-bg-color);
+    padding: .08rem;
+    width: .52rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>.right-aside>.item+.item {
+    margin-top: .08rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>.right-aside>.item>.circle {
+    border-radius: 50%;
+    height: .28rem;
+    margin: 0 auto;
+    width: .28rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>.right-aside>.item>.p1,
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>.right-aside>.item>.p2 {
+    height: .08rem;
+    margin: .06rem auto 0;
+    width: .4rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>.right-aside>.item>.p2 {
+    margin-top: .03rem;
+    width: .3rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main>.right-content {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    overflow: hidden
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content {
+    height: calc(100% - .12rem);
+    margin: 0 auto;
+    padding-top: .12rem;
+    width: 12rem;
+    width: var(--theme-main-width)
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner {
+    background: var(--theme-main-bg-color);
+    padding: .1rem;
+    position: relative
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner+.banner {
+    margin-top: .12rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner1>.img1 {
+    height: 2rem;
+    margin-bottom: .2rem;
+    margin-top: .2rem;
+    width: 100%
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner1>.img2 {
+    height: 2.2rem;
+    left: 10%;
+    margin-bottom: .2rem;
+    margin-top: .2rem;
+    position: absolute;
+    top: 0;
+    width: 80%
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner3 {
+    padding: .1rem .14rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner3>.p {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner3>.p>.circle {
+    border-radius: 50%;
+    height: .28rem;
+    width: .28rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner3>.p>.p1 {
+    -ms-flex: 1;
+    flex: 1;
+    height: .08rem;
+    margin-left: .12rem;
+    width: 100%
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner4 {
+    display: -ms-flexbox;
+    display: flex
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner4>.item {
+    height: .6rem;
+    width: .95rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner4>.item+.item {
+    margin-left: .1rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner2 {
+    padding: .1rem .2rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner2>.top {
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner2>.top>.left {
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: .06rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner2>.top>.left>.item {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner2>.top>.left>.item>.circle {
+    border-radius: 50%;
+    height: .28rem;
+    width: .28rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner2>.top>.left>.item>.p1 {
+    height: .08rem;
+    margin-left: .06rem;
+    width: .8rem
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner2>.game-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner2>.game-list>.game-item {
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    margin-left: .223rem;
+    margin-top: .16rem;
+    width: calc(16.66667% - .19rem)
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner2>.game-list>.game-item>div {
+    height: 2.26rem;
+    width: 100%
+}
+
+.skeleton-screen-main .eu_an-loading-container[data-device=desktop] main .centre-content>.banner2>.game-list>.game-item:nth-of-type(6n+1) {
+    margin-left: 0
+}
+
+@-webkit-keyframes cyan_blue_bganimation {
+    0% {
+        background-position-x: 125%
+    }
+
+    to {
+        background-position-x: -32%
+    }
+}
+
+@keyframes cyan_blue_bganimation {
+    0% {
+        background-position-x: 125%
+    }
+
+    to {
+        background-position-x: -32%
+    }
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile] {
+    background: var(--theme-main-bg-color);
+    height: 100vh;
+    height: calc(var(--vh, 1vh)*100);
+    overflow: hidden;
+    width: 100%
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile] .base-loading-animation,
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile] .base-loading-animation2 {
+    -webkit-animation: cyan_blue_bganimation .9s linear infinite;
+    animation: cyan_blue_bganimation .9s linear infinite;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(rgba(var(--theme-color-line-hex), .2)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), to(var(--theme-bg-color)));
+    background-image: linear-gradient(90deg, var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), rgba(var(--theme-color-line-hex), .2), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color));
+    background-size: 200% 100%
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile] .c-redius-min {
+    border-radius: .07rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile] .c-redius {
+    border-radius: .12rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile] .c-redius-max {
+    border-radius: .14rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile] .circle {
+    border-radius: 50%
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile] .circle-txt {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile] .circle-txt .txt {
+    border-radius: .07rem;
+    height: .14rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile] .flex-center {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>header {
+    -ms-flex-pack: justify;
+    height: .95rem;
+    justify-content: space-between;
+    padding-left: .25rem;
+    padding-right: .2rem;
+    position: relative
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>header>.circle,
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>header>.flex-center>div {
+    height: .5rem;
+    width: .5rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>header>.flex-center>div+div {
+    margin-left: .25rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>header .center-box {
+    height: .7rem;
+    left: 2.15rem;
+    position: absolute;
+    top: .12rem;
+    width: 3.2rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.banner {
+    height: 3.06rem;
+    width: 100%
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.marquee {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .2rem .2rem .17rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.marquee .circle {
+    height: .4rem;
+    width: .4rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.marquee .txt {
+    margin-left: .08rem;
+    width: 6.07rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.search {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 .2rem .19rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.search .circle {
+    height: .4rem;
+    margin-left: .1rem;
+    width: .4rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.search .txt {
+    width: 2.42rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.search .search-box {
+    border: .01rem solid #f1f1f1;
+    border-radius: .2rem;
+    height: .4rem;
+    width: 2.52rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.middle-menu {
+    -ms-flex-pack: space-evenly;
+    background-color: #f1f1f1;
+    height: 1.15rem;
+    justify-content: space-evenly
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.middle-menu .circle-txt {
+    -ms-flex-pack: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.middle-menu .circle-txt .circle {
+    height: .5rem;
+    width: .5rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.middle-menu .circle-txt .c-redius {
+    height: .14rem;
+    margin-top: .15rem;
+    width: .5rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.quick-enter {
+    padding: .2rem .2rem 0
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.quick-enter>div {
+    background-color: #f1f1f1;
+    height: 2.31rem;
+    padding-top: .69rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.quick-enter>div>.c-redius {
+    height: .14rem;
+    margin: 0 auto;
+    width: 2.56rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.quick-enter>div>.flex-center {
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: .28rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.quick-enter>div>.flex-center>.c-redius {
+    height: 1.02rem;
+    width: .77rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.quick-enter>div>.flex-center>.c-redius+.c-redius {
+    margin-left: .2rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.game-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 .2rem .2rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.game-list>.circle-txt {
+    -ms-flex-pack: end;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 2.85rem;
+    justify-content: flex-end;
+    margin-top: .2rem;
+    width: 2.2rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.game-list>.circle-txt+.circle-txt {
+    margin-left: .25rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.game-list>.circle-txt:nth-of-type(3n+1) {
+    margin-left: 0
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.game-list>.circle-txt .circle {
+    background: var(--theme-main-bg-color);
+    height: .5rem;
+    margin-bottom: .17rem;
+    width: .5rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.game-list>.circle-txt .txt:first-of-type {
+    background: var(--theme-main-bg-color);
+    margin-bottom: .1rem;
+    width: 1.71rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.game-list>.circle-txt .txt:last-of-type {
+    background: var(--theme-main-bg-color);
+    margin-bottom: .15rem;
+    width: .96rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.bottom-menu {
+    -ms-flex-pack: space-evenly;
+    background-color: #f1f1f1;
+    bottom: 0;
+    height: 1.23rem;
+    justify-content: space-evenly;
+    left: 0;
+    position: fixed;
+    width: 100%
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.bottom-menu .circle-txt {
+    -ms-flex-pack: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.bottom-menu .circle-txt .circle {
+    height: .6rem;
+    width: .6rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=mobile]>.bottom-menu .circle-txt .c-redius {
+    height: .14rem;
+    margin-top: .15rem;
+    width: .6rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] {
+    background: var(--theme-main-bg-color);
+    height: 100vh;
+    overflow: hidden;
+    width: 100%
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] .base-loading-animation,
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] .base-loading-animation2 {
+    -webkit-animation: cyan_blue_bganimation .9s linear infinite;
+    animation: cyan_blue_bganimation .9s linear infinite;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(rgba(var(--theme-color-line-hex), .2)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), to(var(--theme-bg-color)));
+    background-image: linear-gradient(90deg, var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), rgba(var(--theme-color-line-hex), .2), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color));
+    background-size: 200% 100%
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] .c-redius-min {
+    border-radius: .06rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] .c-redius {
+    border-radius: .1rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] .c-redius-max {
+    border-radius: .2rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] .circle {
+    border-radius: 50%
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] .circle-txt {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] .circle-txt .txt {
+    border-radius: .06rem;
+    height: .12rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] .flex-center {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header {
+    -ms-flex-pack: justify;
+    height: 1.5rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    width: 12rem;
+    width: var(--theme-main-width)
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>aside>.circle-txt .circle {
+    height: .35rem;
+    width: .35rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>aside>.circle-txt .txt {
+    margin-left: .06rem;
+    width: 2.33rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>aside>.box {
+    height: .7rem;
+    margin-top: .06rem;
+    width: 2.74rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type>.circle-txt>.circle {
+    height: .35rem;
+    width: .35rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type>.circle-txt>.txt {
+    margin-left: .1rem;
+    margin-right: .21rem;
+    width: .31rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type .circle-box {
+    height: .4rem;
+    width: 1.01rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type .circle-box+.circle-box {
+    margin-left: .15rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type .circle-box1 {
+    border: .01rem solid #e3e3e3;
+    height: .4rem;
+    margin-left: .19rem;
+    width: 2.23rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type .box-txt {
+    margin-left: .2rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type .box-txt>.left {
+    height: .57rem;
+    width: .57rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type .box-txt>.right {
+    margin-left: .11rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type .box-txt>.right>div {
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type .box-txt>.right>div:first-of-type>.txt:first-of-type {
+    width: .97rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type .box-txt>.right>div:first-of-type>.txt {
+    width: .12rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type .box-txt>.right>div:first-of-type>.txt:last-of-type {
+    margin-left: .18rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type .box-txt>.right>div:last-of-type {
+    margin-top: .19rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type .box-txt>.right>div:last-of-type>.txt:first-of-type {
+    width: 1.06rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type .box-txt>.right>div:last-of-type>.txt {
+    width: .12rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type .box-txt>.right>div:last-of-type>.txt:last-of-type {
+    margin-left: .09rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:first-of-type>.circle {
+    height: .3rem;
+    margin-left: .18rem;
+    width: .3rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:last-of-type {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-top: .12rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:last-of-type>.circle-txt {
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:last-of-type>.circle-txt+.circle-txt {
+    margin-left: .28rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:last-of-type>.circle-txt>.circle {
+    height: .25rem;
+    width: .25rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop] header>section>div:last-of-type>.circle-txt>p {
+    border-radius: .03rem;
+    height: .06rem;
+    margin: .07rem 0 0;
+    width: .25rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop]>.banner {
+    height: 5.58rem;
+    width: 100%
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop]>.marquee {
+    -ms-flex-pack: justify;
+    height: .8rem;
+    justify-content: space-between;
+    padding: 0 .44rem 0 .3rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop]>.marquee>.circle-txt>.circle {
+    height: .4rem;
+    width: .4rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop]>.marquee>.circle-txt>p {
+    height: .2rem;
+    margin-left: .2rem;
+    width: 14.4rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop]>.marquee>.circle {
+    height: .4rem;
+    width: .4rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop]>.quck-enter {
+    -ms-flex-pack: center;
+    background: #f1f1f1;
+    height: 1.2rem;
+    justify-content: center
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop]>.quck-enter>.circle-txt+.circle-txt {
+    margin-left: 2.43rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop]>.quck-enter>.circle-txt .circle {
+    height: .78rem;
+    width: .78rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop]>.quck-enter>.circle-txt>div:last-of-type {
+    margin-left: .1rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop]>.quck-enter>.circle-txt>div:last-of-type>p {
+    height: .12rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop]>.quck-enter>.circle-txt>div:last-of-type>p:first-of-type {
+    width: .97rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop]>.quck-enter>.circle-txt>div:last-of-type>p:last-of-type {
+    margin-top: .19rem;
+    width: 1.06rem
+}
+
+.skeleton-screen-main .cyan_blue-loading-container[data-device=desktop]>.main-content {
+    background: var(--theme-bg-color);
+    height: 3rem;
+    width: 100%
+}
+
+.skeleton-screen-main .goto-game-container {
+    background-color: var(--theme-main-bg-color)
+}
+
+.skeleton-screen-main .goto-game-container[data-device=mobile]>div {
+    width: 100%
+}
+
+.skeleton-screen-main .goto-game-container[data-device=mobile] header {
+    padding-top: .16rem
+}
+
+.skeleton-screen-main .goto-game-container[data-device=mobile] header>.right {
+    padding-right: .16rem;
+    width: 2.5rem
+}
+
+.skeleton-screen-main .goto-game-container[data-device=mobile] header>.left,
+.skeleton-screen-main .goto-game-container[data-device=mobile] header>.right>.item {
+    height: .64rem;
+    margin-left: .16rem;
+    width: .64rem
+}
+
+.skeleton-screen-main .goto-game-container[data-device=mobile] main {
+    max-height: calc(100vh - 2.3rem);
+    overflow: hidden;
+    padding: .32rem
+}
+
+.skeleton-screen-main .goto-game-container[data-device=mobile] main>.content-1>.item {
+    height: 1rem;
+    width: 44%
+}
+
+.skeleton-screen-main .goto-game-container[data-device=mobile] main>.content-2 {
+    padding-top: .24rem
+}
+
+.skeleton-screen-main .goto-game-container[data-device=mobile] main>.content-2>.item {
+    height: .54rem;
+    width: 1.2rem
+}
+
+.skeleton-screen-main .goto-game-container[data-device=mobile] main>.content-3>.item {
+    height: 3rem;
+    margin-top: .24rem;
+    width: 100%
+}
+
+.skeleton-screen-main .goto-game-container[data-device=mobile] footer {
+    bottom: 0;
+    left: 0;
+    padding-bottom: .2rem;
+    position: absolute;
+    width: 100%
+}
+
+.skeleton-screen-main .goto-game-container[data-device=mobile] footer>.left,
+.skeleton-screen-main .goto-game-container[data-device=mobile] footer>.right {
+    height: .9rem;
+    margin-left: .16rem;
+    width: .9rem
+}
+
+.skeleton-screen-main .goto-game-container[data-device=mobile] footer>.right {
+    margin-right: .16rem;
+    width: 3.3rem
+}
+
+.skeleton-screen-main .goto-game-container .g-redius-min {
+    border-radius: .05rem
+}
+
+.skeleton-screen-main .goto-game-container .g-flex {
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between
+}
+
+.skeleton-screen-main .goto-game-container>div {
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    width: 56.25vh
+}
+
+.skeleton-screen-main .goto-game-container header {
+    padding-top: .08rem;
+    width: 100%
+}
+
+.skeleton-screen-main .goto-game-container header>.right {
+    padding-right: .08rem;
+    width: 1.6rem
+}
+
+.skeleton-screen-main .goto-game-container header>.left,
+.skeleton-screen-main .goto-game-container header>.right>.item {
+    height: .4rem;
+    margin-left: .08rem;
+    width: .4rem
+}
+
+.skeleton-screen-main .goto-game-container main {
+    max-height: calc(100vh - 2rem);
+    overflow: hidden;
+    padding: .2rem
+}
+
+.skeleton-screen-main .goto-game-container main>.content-1>.item {
+    height: .7rem;
+    width: 44%
+}
+
+.skeleton-screen-main .goto-game-container main>.content-2 {
+    padding-top: .14rem
+}
+
+.skeleton-screen-main .goto-game-container main>.content-2>.item {
+    height: .4rem;
+    width: .9rem
+}
+
+.skeleton-screen-main .goto-game-container main>.content-3>.item {
+    height: 2.05rem;
+    margin-top: .12rem;
+    width: 100%
+}
+
+.skeleton-screen-main .goto-game-container footer {
+    bottom: 0;
+    left: 0;
+    padding-bottom: .2rem;
+    position: absolute;
+    width: 100%
+}
+
+.skeleton-screen-main .goto-game-container footer>.left,
+.skeleton-screen-main .goto-game-container footer>.right {
+    height: .7rem;
+    margin-left: .08rem;
+    width: .7rem
+}
+
+.skeleton-screen-main .goto-game-container footer>.right {
+    margin-right: .08rem;
+    width: 2.3rem
+}
+
+.skeleton-screen-main .skeleton-custom {
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    background-color: var(--theme-main-bg-color);
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    opacity: 1 !important;
+    width: 100%
+}
+
+.skeleton-screen-main .skeleton-custom[data-device=desktop] img,
+.skeleton-screen-main .skeleton-custom[data-device=desktop] source {
+    height: 4rem;
+    width: 4rem
+}
+
+.skeleton-screen-main .skeleton-custom[data-device=mobile] img,
+.skeleton-screen-main .skeleton-custom[data-device=mobile] source {
+    height: 5.55rem;
+    width: 5.55rem
+}
+
+@keyframes common_bganimation {
+    0% {
+        background-position-x: 125%
+    }
+
+    to {
+        background-position-x: -32%
+    }
+}
+
+.skeleton-screen-main .common-loading-container .common-loading-animation {
+    -webkit-animation: common_bganimation .9s linear infinite;
+    animation: common_bganimation .9s linear infinite;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), color-stop(rgba(var(--theme-color-line-hex), .5)), color-stop(var(--theme-bg-color)), color-stop(var(--theme-bg-color)), to(var(--theme-bg-color)));
+    background-image: linear-gradient(90deg, var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color), rgba(var(--theme-color-line-hex), .5), var(--theme-bg-color), var(--theme-bg-color), var(--theme-bg-color));
+    background-size: 200% 100%
+}
+
+.skeleton-screen-main .common-loading-container .common-loading-animation2 {
+    -webkit-animation: common_bganimation .9s linear infinite;
+    animation: common_bganimation .9s linear infinite;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--theme-main-bg-color)), color-stop(var(--theme-main-bg-color)), color-stop(var(--theme-main-bg-color)), color-stop(rgba(var(--theme-color-line-hex), .5)), color-stop(var(--theme-main-bg-color)), color-stop(var(--theme-main-bg-color)), to(var(--theme-main-bg-color)));
+    background-image: linear-gradient(90deg, var(--theme-main-bg-color), var(--theme-main-bg-color), var(--theme-main-bg-color), rgba(var(--theme-color-line-hex), .5), var(--theme-main-bg-color), var(--theme-main-bg-color), var(--theme-main-bg-color));
+    background-size: 200% 100%
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile {
+    background: var(--theme-main-bg-color);
+    height: 100vh;
+    overflow: hidden;
+    width: 100%
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile .c-redius-min {
+    border-radius: .06rem
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile .c-redius {
+    border-radius: .1rem
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile .circle {
+    border-radius: 50%
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile .circle-txt,
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile .flex-center {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile>header {
+    height: .95rem
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile>.banner {
+    height: 2.19rem;
+    width: 100%
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile>.marquee {
+    -ms-flex-pack: justify;
+    background-color: var(--theme-bg-color);
+    justify-content: space-between;
+    padding: .1rem .2rem;
+    width: 100%
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile>.marquee .circle {
+    height: .35rem;
+    width: .35rem
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile>.marquee .txt {
+    height: .2rem;
+    margin-left: .1rem;
+    width: 6.65rem
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile>.quick-enter {
+    height: 1.4rem;
+    margin: .2rem;
+    width: 7.1rem
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile>.game-list {
+    height: 6.38rem;
+    margin: .2rem;
+    width: 7.1rem
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile>.bottom-menu {
+    -ms-flex-pack: space-evenly;
+    background-color: var(--theme-bg-color);
+    bottom: 0;
+    height: 1.27rem;
+    justify-content: space-evenly;
+    left: 0;
+    position: fixed;
+    width: 100%
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile>.bottom-menu .circle-txt {
+    -ms-flex-pack: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile>.bottom-menu .circle-txt .circle {
+    height: .7rem;
+    width: .7rem
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-mobile>.bottom-menu .circle-txt .c-redius {
+    height: .12rem;
+    margin-top: .1rem;
+    width: .6rem
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-PC {
+    background: var(--theme-main-bg-color);
+    height: 100vh;
+    overflow: hidden;
+    width: 100%
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-PC .c-redius {
+    border-radius: .12rem
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-PC .circle {
+    border-radius: 50%
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-PC .flex-center {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-PC>header>.top-menu {
+    height: .5rem;
+    width: 100%
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-PC>header>.flex-center {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: .12rem 0;
+    width: 12rem;
+    width: var(--theme-main-width)
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-PC>header>.flex-center>div {
+    height: .5rem;
+    width: .5rem
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-PC>header>.flex-center>div:first-child {
+    width: 2.3rem
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-PC>.banner {
+    height: 5.64rem;
+    width: 100%
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-PC>.marquee {
+    -ms-flex-pack: justify;
+    background: var(--theme-bg-color);
+    height: .5rem;
+    justify-content: space-between;
+    margin: .2rem auto 0;
+    padding: .2rem;
+    width: 12rem;
+    width: var(--theme-main-width)
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-PC>.marquee .circle {
+    height: .3rem;
+    width: .3rem
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-PC>.marquee .txt {
+    -ms-flex: 1;
+    flex: 1;
+    height: .2rem;
+    margin-left: .08rem;
+    width: 100%
+}
+
+.skeleton-screen-main .common-loading-container.common-loading-container-PC>.game-list {
+    height: 5rem;
+    margin: .2rem auto 0;
+    width: 12rem;
+    width: var(--theme-main-width)
+}
+
+html[data-device=desktop] .skeleton-screen-main [data-device=mobile] {
+    display: none
+}
+
+html[data-device=mobile] {
+    --theme-main-width: 100%
+}
+
+html[data-device=mobile] .skeleton-screen-main [data-device=desktop] {
+    display: none
+}
+
+html[data-device-nodesktop="1"] .skeleton-screen-main {
+    margin: 0 auto;
+    max-width: var(--theme-max-width)
+}
+
+html[data-device-nodesktop="1"] .bottom-menu {
+    left: auto !important;
+    margin: 0 auto;
+    max-width: var(--theme-max-width)
+}
